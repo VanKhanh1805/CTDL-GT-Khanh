@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập hàm</title>
+    <meta name="description" 
+    content="https://github.com/hohieuit/javascript-coban?fbclid=IwAR0XShskZ1tO9pNJAQJUNbzwS4VabW84rbsjU0TOdQo0Qk2gnhpRa_djG7s">
+    <script src="javascrip.js"></script>
+</head>
+<body>
+    <div id="KetQua">
+
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById("KetQua");
+        var htmlKetQua = "";
+        //Tính tổng 2 số
+        htmlKetQua = htmlKetQua + `<p>Bài1: Tổng hai số 2 và 3 là: ${tong(2,3)} và hiệu là: ${hieu(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài2: Tích hai số 2 và 3 là: ${tich(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài3: Thương hai số 2 và 3 <br> ${thuong(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài4: Số lớn nhất trong hai số 2 và 3 là: ${soLonNhat(2,3)}<br> và số nhỏ nhất là: ${soNhoNhat(2,3)}</p>`;
+        
+        //Ghi kết quả ra màn hình
+        nodeKetQua.innerHTML = htmlKetQua;
+    </script>
+</body>
+</html>
