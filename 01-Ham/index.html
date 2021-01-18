@@ -15,12 +15,20 @@
     <script>
         var nodeKetQua = document.getElementById("KetQua");
         var htmlKetQua = "";
-        //Tính tổng 2 số
         htmlKetQua = htmlKetQua + `<p>Bài1: Tổng hai số 2 và 3 là: ${tong(2,3)} và hiệu là: ${hieu(2,3)}</p>`;
-        htmlKetQua = htmlKetQua + `<p>Bài2: Tích hai số 2 và 3 là: ${tich(2,3)}</p>`;
-        htmlKetQua = htmlKetQua + `<p>Bài3: Thương hai số 2 và 3 <br> ${thuong(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài2: Tích hai số 2 và 3 là: ${tich(2,3)}<br> Thương hai số 2 và 3: <br> ${thuong(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài3: Bình phương của 2 là: ${binhPhuong(2)}<br> và bình phương của 3 là: ${binhPhuong(3)}</p>`;
         htmlKetQua = htmlKetQua + `<p>Bài4: Số lớn nhất trong hai số 2 và 3 là: ${soLonNhat(2,3)}<br> và số nhỏ nhất là: ${soNhoNhat(2,3)}</p>`;
-        
+        htmlKetQua = htmlKetQua + `<p>Bài5: Gía trị trung bình của hai số 2 và 3 là: ${trungBinh(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài6: Phần dư khi chia 7 cho 3 là: ${chiaLayDu(7,3)} <br> và phần dư khi chia 3 cho 7 là: ${chiaLayDu(3,7)}</p>`
+        htmlKetQua = htmlKetQua + `<p>Bài7: Kiểm tra 2 số có chia hết cho nhau hay không:
+            <br> Ví dụ 2/4 : ${kiemTraChia(2,4)}
+            <br> Ví dụ 4/2: ${kiemTraChia(4,2)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài8: Tính diện tích và chu vi hình chữ nhật:
+            <br>- Cho một HCN có chiều dài a = 6 và chiều rộng b = 3.<br> ${tinhChuViDienTichHCN(6,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài9: Tính diện tích và chu vi hình tròn:
+            <br>- Cho một hình tròn có bán kính a = 5.<br> ${tinhChuViDienTichHT(5)}
+            <br>- Cho một hình tròn có bán kính r = 8.<br> ${tinhChuViDienTichHT(8)}</p>`;
         //Ghi kết quả ra màn hình
         nodeKetQua.innerHTML = htmlKetQua;
     </script>
