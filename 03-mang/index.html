@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập hàm</title>
+    <meta name="description" 
+    content="https://github.com/hohieuit/javascript-coban?fbclid=IwAR0XShskZ1tO9pNJAQJUNbzwS4VabW84rbsjU0TOdQo0Qk2gnhpRa_djG7s">
+    <script src="javascrip.js"></script>
+</head>
+<body>
+    <div id="KetQua">
+
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById("KetQua");
+        var htmlKetQua = "";
+        //Tìm pt đầu
+        htmlKetQua = htmlKetQua + `<p>Bài5: Tìm vị trí phẩn tử đầu tiên "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"]<br>
+        vị trí số: ${findFirst(["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"],"bóng rổ")}</p>`;
+        //tìm pt cuối
+        htmlKetQua = htmlKetQua + `<p>Bài6: Tìm vị trí phần tử cuối "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"]<br>
+        vị trí số: ${findLast(["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"],"bóng rổ")}</p>`;
+        //tìm tất cả pt
+        htmlKetQua = htmlKetQua + `<p>Bài7: Tìm vị trí tất cả phần tử "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"]<br>
+        vị trí số: ${find(["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"],"bóng rổ")}</p>`;
+        //thêm pt vào mảng
+        htmlKetQua = htmlKetQua + `<p>Bài8: Thêm phần tử "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"]<br>
+        mảng sau khi thêm: ${add(["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"],"bóng rổ")}</p>`;
+        //thêm pt vào mảng nếu có rồi thì k thêm nữa
+        htmlKetQua = htmlKetQua + `<p>Bài9: Thêm phần tử "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"]<br>
+        mảng sau khi thêm: ${faddIfNotExist(["bóng dá", "bóng rổ", "bóng bàn", "bóng chuyền"],"bóng rổ")}</p>`;
+        //Xóa toàn bộ pt khỏi mảng
+        htmlKetQua = htmlKetQua + `<p>Bài10: Xóa phần tử "bóng rổ" trong mảng Bong = ["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"]<br>
+        mảng sau khi xóa: ${deleteChuoi(["bóng dá", "bóng rổ", "bóng bàn", "bóng rổ", "bóng chuyền"],"bóng rổ")}</p>`;
+        //Ghi kết quả ra màn hình Doan Xem
+        nodeKetQua.innerHTML = htmlKetQua;
+    </script>
+</body>
+</html>
